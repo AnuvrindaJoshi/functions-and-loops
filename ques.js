@@ -54,6 +54,19 @@ for(let i=1;i<=str7.length;i++){
 }
 console.log(sum7);
 
+//q8. implement selecttion sort
+let ar8=[5,3,6,2,4,1];
+for(let i=0;i<ar8.length-1;i++){
+    let minIndex=i;
+    for(let j=i+1;j<ar8.length;j++){
+if(ar8[j]<ar8[minIndex]){
+    minIndex=j;
+}
+    }
+   [ ar8[i],ar8[minIndex] ]=[ ar8[minIndex],ar8[i]]
+}
+console.log(ar8)
+
 //q9. factorial of a number
 let num9=8;
 let fact=1;
@@ -145,9 +158,16 @@ console.log(finalAr17)
 let ar18A= [1,2,3,4];
 let ar18B= [5,6,7,8,];
 let finalar18=[];
+if(ar18A.length>ar18B.length){
 for(let i=0;i<ar18A.length;i++){
   let  productOfArrays= ar18A[i]*ar18B[i];
 finalar18.push(productOfArrays);
+}
+}else{
+    for(let i=0;i<ar18B.length;i++){
+        let  productOfArrays= ar18A[i]*ar18B[i];
+      finalar18.push(productOfArrays); 
+}
 }
 console.log(finalar18)
 
@@ -180,11 +200,8 @@ for (let i=1;i<=str.length;i++){
         count21= count21+1;
     }
 }
-return `the number of vowels in the given strting are ${count21}`;
+return `the number of vowels in the given string are ${count21}`;
 }
 console.log(vowelsInAString('anuvrinda'))
-
-
-
 
 
