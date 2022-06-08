@@ -144,6 +144,21 @@ for(let i=0;i<a15.length;i++){
 }
 console.log(outcome15);
 
+//q16. armstrong number
+let armNum= 153;
+let x=0;
+let armStr= armNum.toString();
+let armPow= armStr.length;
+for(let i=0;i<armStr.length;i++){
+x = x+Math.pow(parseInt( armStr[i]),armPow);
+}
+console.log(x)
+if(x==armNum){
+    console.log(`${armNum} is an armstrong number`)
+}else{
+    console.log(`${armNum} is not an armstrong number`)
+}
+
 //q17. print even numbers in given array
 let ar17= [1,2,3,4,5,6,7];
 let finalAr17=[];
